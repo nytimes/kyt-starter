@@ -1,0 +1,9 @@
+logs
+*.log
+pids
+*.pid
+*.seed
+node_modules
+.npm
+build
+src/.DS_Store

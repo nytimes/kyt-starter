@@ -1,17 +1,16 @@
 
-import test from 'ava';
-var React= require('react');
-var chai = require('chai');
-var enzyme= require('enzyme');
-import DemoComponent from '../DemoComponent';
-/*
- * This testing environment uses:
- * ava : https://github.com/avajs/ava
- * chai: http://chaijs.com/
- * enzyme: https://github.com/airbnb/enzyme
- */
-test('Tests that true is true.', t => {
-    const wrapper = enzyme.shallow(
-      <DemoComponent/>);
-    t.pass(chai.assert.isTrue(true));
+// This testing environment uses:
+// ava : https://github.com/avajs/ava
+// chai: http://chaijs.com/
+// enzyme: https://github.com/airbnb/enzyme
+
+import ava from 'ava';
+import React from 'react';
+import chai from 'chai';
+import { shallow } from 'enzyme';
+import DemoComponent from './../DemoComponent';
+
+ava('Tests that true is true.', (test) => {
+  const wrapper = shallow(<DemoComponent />);
+  test.pass(chai.assert.isTrue(wrapper.text() === 'Hello World'));
 });
