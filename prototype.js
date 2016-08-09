@@ -1,6 +1,7 @@
 
-// This is your prototyping file which is the entry for
-// the webpack dev server when you run the kyt proto command.
+// This is your prototyping file.
+// It is the entry for the webpack dev server
+// when you run the kyt proto command.
 import React from 'react';
 import ReactDom from 'react-dom';
 
