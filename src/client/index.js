@@ -4,17 +4,15 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import DemoComponent from './../components/DemoComponent/DemoComponent';
+import App from './../components/App';
 
 const root = document.querySelector('#root');
 
-const mount = () => {
-  render(<DemoComponent />, root);
-};
+const mount = () => render(<App />, root);
 
 if (process.env.NODE_ENV === 'development' && module.hot) {
-  // Rerender after any changes.
-  module.hot.accept('./index.js');
+  // Rerender the app after any changes.
+  module.hot.accept('./../components/App', mount);
 }
 
 mount();

@@ -8,9 +8,9 @@ import ava from 'ava';
 import React from 'react';
 import chai from 'chai';
 import { shallow } from 'enzyme';
-import DemoComponent from './../DemoComponent';
+import HelloWorld from './index.js';
 
 ava('Tests that true is true.', (test) => {
-  const wrapper = shallow(<DemoComponent />);
+  const wrapper = shallow(<HelloWorld />);
   test.pass(chai.assert.isTrue(wrapper.text() === 'Hello World'));
 });
