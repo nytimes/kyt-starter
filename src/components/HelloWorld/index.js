@@ -4,10 +4,10 @@
 
 import React from 'react';
 
-function DemoComponent() {
+function HelloWorld() {
   return (
     <h1>Hello World</h1>
   );
 }
 
-export default DemoComponent;
+export default HelloWorld;
