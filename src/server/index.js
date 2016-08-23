@@ -1,10 +1,10 @@
 
 import express from 'express';
 
-const clientAssets = require(process.env.ASSETS_PATH);
-const app = express();
+const clientAssets = require(process.env.ASSETS_MANIFEST);
 
-app.use(process.env.PUBLIC_PATH, express.static(process.env.CLIENT_BUILD_PATH));
+const app = express();
+app.use(express.static(process.env.PUBLIC_DIR));
 
 app.get('/', (req, res) => {
   res.send(`
