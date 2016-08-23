@@ -1,4 +1,4 @@
 
 module.exports = {
-  reactHotLoader: false,
+  reactHotLoader: true,
 };
