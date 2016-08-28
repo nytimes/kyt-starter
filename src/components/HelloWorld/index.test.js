@@ -12,5 +12,5 @@ import HelloWorld from './index.js';
 
 ava('Tests that true is true.', (test) => {
   const wrapper = shallow(<HelloWorld />);
-  test.pass(chai.assert.isTrue(wrapper.text() === 'Hello World'));
+  test.pass(chai.assert.isTrue(wrapper.text() === 'Hello World!'));
 });
