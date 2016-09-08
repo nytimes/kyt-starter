@@ -11,7 +11,7 @@ const favicon = "";//path.join(staticPath, '/images/kyt_favicon.png');
 app.get('/', (req, res) => {
   res.send(`
     <head>
-      <link rel="shortcut icon" href="${favicon}">
+      <link rel="shortcut icon" href='/kyt-favicon.png'>
       <link href="${clientAssets.main.css}" rel="stylesheet" type="text/css"/>
     </head>
     <body>
