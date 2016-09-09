@@ -1,20 +1,22 @@
 
+/* eslint-disable prefer-template */
+
+import path from 'path';
 import express from 'express';
 
-const path = require('path');
 const clientAssets = require(process.env.ASSETS_MANIFEST);
 
 const app = express();
 const staticPath = path.join(process.cwd(), process.env.PUBLIC_DIR);
 app.use(express.static(staticPath));
 app.get('/', (req, res) => {
-
-
-
   res.send(`
     <head>
       <link rel="shortcut icon" href='/kyt-favicon.png'>
-      ${clientAssets.main.css ? '<link rel="stylesheet" type="text/css" href="' + clientAssets.main.css + '">' : ''}
+      ${clientAssets.main.css ?
+        '<link rel="stylesheet" type="text/css" href="' + clientAssets.main.css + '">'
+        : ''}
+      <title>React kyt</title>
     </head>
     <body>
       <div id='root'></div>
