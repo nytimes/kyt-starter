@@ -3,7 +3,7 @@
 // React: https://facebook.github.io/react/
 
 import React from 'react';
-import HelloWorld from '../HelloWorld'
+import HelloWorld from '../HelloWorld';
 
 function App() {
   return (

@@ -1,0 +1,16 @@
+
+.hello {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  display: block;
+  width: 252px;
+  height: 252px;
+  margin: 0 auto;
+  background: url('../../images/icon-kyt-252x252.svg');
+}
