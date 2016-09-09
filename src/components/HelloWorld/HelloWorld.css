@@ -1,13 +1,16 @@
+
 .hello {
   text-align: center;
 }
+
 .list {
   list-style: none;
 }
+
 .logo {
-  margin: 0 auto;
   display: block;
   width: 252px;
   height: 252px;
+  margin: 0 auto;
   background: url('../../public/images/icon-kytLogo_large-252x252.svg');
 }

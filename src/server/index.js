@@ -7,12 +7,14 @@ const clientAssets = require(process.env.ASSETS_MANIFEST);
 const app = express();
 const staticPath = path.join(process.cwd(), process.env.PUBLIC_DIR);
 app.use(express.static(staticPath));
-const favicon = "";//path.join(staticPath, '/images/kyt_favicon.png');
 app.get('/', (req, res) => {
+
+
+
   res.send(`
     <head>
       <link rel="shortcut icon" href='/kyt-favicon.png'>
-      <link href="${clientAssets.main.css}" rel="stylesheet" type="text/css"/>
+      ${clientAssets.main.css ? '<link rel="stylesheet" type="text/css" href="' + clientAssets.main.css + '">' : ''}
     </head>
     <body>
       <div id='root'></div>
