@@ -7,8 +7,9 @@ import express from 'express';
 const clientAssets = require(process.env.ASSETS_MANIFEST);
 
 const app = express();
-const staticPath = path.join(process.cwd(), process.env.PUBLIC_DIR);
-app.use(express.static(staticPath));
+
+app.use(express.static(path.join(process.cwd(), process.env.PUBLIC_DIR)));
+
 app.get('/', (req, res) => {
   res.send(`
     <head>
