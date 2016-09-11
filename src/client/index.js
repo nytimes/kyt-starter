@@ -5,14 +5,20 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './../components/App';
+import { AppContainer } from 'react-hot-loader';
 
 const root = document.querySelector('#root');
 
-const mount = () => render(<App />, root);
+const mount = (RootComponent) => render(
+  <AppContainer>
+    <RootComponent />
+  </AppContainer>,
+  root
+);
 
-if (process.env.NODE_ENV === 'development' && module.hot) {
-  // Rerender the app after any changes.
-  module.hot.accept('./../components/App', mount);
-}
+ module.hot.accept('./../components/App', () => {
+  const RootComponent = require('./../components/App').default;
+  mount(RootComponent);
+});
 
-mount();
+mount(App);
