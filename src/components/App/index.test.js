@@ -3,13 +3,12 @@
 // ava : https://github.com/avajs/ava
 // enzyme: https://github.com/airbnb/enzyme
 
-import ava from 'ava';
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './index.js';
 import HelloWorld from '../HelloWorld';
 
-ava('Tests that true is true.', (test) => {
+it('Tests that the App renders.', () => {
   const wrapper = shallow(<App />);
-  test.true(wrapper.contains(<HelloWorld />));
+  expect(wrapper.contains(<HelloWorld />)).toBeTruthy();
 });
