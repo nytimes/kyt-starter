@@ -4,6 +4,12 @@ The is the default starter-kyt for [kyt](https://github.com/NYTimes/kyt).
 
 This starter-kyt is for building beginner React apps.
 
+# Installation
+
+1. Create a new directory and install [kyt](https://github.com/NYTimes/kyt)
+2. `node_modules/.bin/kyt setup`
+3. When prompted to install the default starter-kyt select `Yes`
+
 ## Included tools
 
 1. [React](https://facebook.github.io/react/docs/getting-started.html)
