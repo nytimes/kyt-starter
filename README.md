@@ -20,4 +20,6 @@ check out the [Universal React Starter-kyt](https://github.com/NYTimes/kyt-start
 
 ## How To Contribute
 Want to build your own starter-kyt?
-See directions [here](https://github.com/NYTimes/kyt).
+See directions [here](https://github.com/NYTimes/kyt/docs/Starterkyts.md).
+
+## Changelog
