@@ -4,12 +4,12 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import App from './../components/App';
 import { AppContainer } from 'react-hot-loader';
+import App from './../components/App';
 
 const root = document.querySelector('#root');
 
-const mount = (RootComponent) => render(
+const mount = RootComponent => render(
   <AppContainer>
     <RootComponent />
   </AppContainer>,
@@ -18,7 +18,7 @@ const mount = (RootComponent) => render(
 
 if (module.hot) {
   module.hot.accept('./../components/App', () => {
-    const RootComponent = require('./../components/App').default;
+    const RootComponent = require('./../components/App').default; // eslint-disable-line
     mount(RootComponent);
   });
 }
