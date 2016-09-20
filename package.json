@@ -6,7 +6,6 @@
   "dependencies": {
     "enzyme": "^2.4.1",
     "express": "^4.14.0",
-    "kyt": "git+ssh://git@github.com/nytm/wf-kyt.git",
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.3.0",
     "react-dom": "^15.3.0"
