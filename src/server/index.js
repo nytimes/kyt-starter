@@ -4,11 +4,11 @@
 import path from 'path';
 import express from 'express';
 
-const clientAssets = require(process.env.ASSETS_MANIFEST);
+const clientAssets = require(KYT.ASSETS_MANIFEST);
 
 const app = express();
 
-app.use(express.static(path.join(process.cwd(), process.env.PUBLIC_DIR)));
+app.use(express.static(path.join(process.cwd(), KYT.PUBLIC_DIR)));
 
 app.get('/', (req, res) => {
   res.send(`
@@ -26,4 +26,4 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.listen(parseInt(process.env.SERVER_PORT, 10));
+app.listen(parseInt(KYT.SERVER_PORT, 10));
