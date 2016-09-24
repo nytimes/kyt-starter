@@ -17,7 +17,7 @@
     "url": "git+https://github.com/nytm/wf-kyt-starter.git"
   },
   "kyt": {
-    "version": "0.2.0"
+    "version": "^0.2.0"
   },
   "author": "",
   "license": "Apache-2.0",
