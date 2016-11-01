@@ -1,6 +1,6 @@
 # Basic React starter-kyt
 
-The is the default starter-kyt for [kyt](https://github.com/NYTimes/kyt).
+The is the simple starter-kyt for [kyt](https://github.com/NYTimes/kyt).
 
 This starter-kyt is for building beginner React apps.
 
