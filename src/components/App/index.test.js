@@ -1,6 +1,6 @@
 
 // This testing environment uses:
-// ava : https://github.com/avajs/ava
+// jest : https://github.com/facebook/jest
 // enzyme: https://github.com/airbnb/enzyme
 
 import React from 'react';
